@@ -40,6 +40,10 @@ function App() {
       setName("");
     }
   };
+  // way to avoid eslint warning for calling showalert from alert.js
+  // const showAlert = useCallback((show = false, type = "", msg = "") => {
+  //   setAlert({ show, type, msg });
+  // }, []);
 
   const showAlert = (show = false, type = "", msg = "") => {
     setAlert({ show, type, msg });
